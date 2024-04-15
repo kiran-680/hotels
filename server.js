@@ -1,4 +1,5 @@
 const express =require("express")
+require("dotenv").config()
 const db=require("./db.js")
 
 
@@ -6,9 +7,12 @@ const db=require("./db.js")
 
 
 const app=express()
+const PORT=process.config.PORT || 3000
+
 
 
 const bodyParser=require("body-parser")
+
 app.use(bodyParser.json())
 
 
@@ -17,6 +21,7 @@ const personRoutes=require("./routes/person.routes.js")
 const menuItemRoutes=require("./routes/menu.routes.js")
 app.use("/person",personRoutes)
 app.use("/menu",menuItemRoutes)
+
 
 
 
@@ -38,5 +43,5 @@ app.get("/chiken",(req,res)=>{
 
 
 
-app.listen(3000)
+app.listen(PORT)
 

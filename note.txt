@@ -1,1 +1,12 @@
 -api flow diagram 
+
+
+k1LepC0Ydf7yc7dl -password
+kirankhadka8848
+
+
+mongodb+srv://kirankhadka8848:k1LepC0Ydf7yc7dl@cluster0.rqy3l4v.mongodb.net/
+
+
+mongodb+srv://kirankhadka8848:<password>@cluster0.rqy3l4v.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
